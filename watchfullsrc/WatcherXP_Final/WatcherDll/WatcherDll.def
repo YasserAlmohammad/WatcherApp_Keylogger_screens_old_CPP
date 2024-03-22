@@ -1,0 +1,19 @@
+; WatcherDll.def : Declares the module parameters for the DLL.
+
+LIBRARY      "WatcherDll"
+
+EXPORTS
+    ; Explicit exports can go here
+	startKB 
+	startIEAddress
+	startFileFolder
+	startWindowTitle
+	startScreenShoots
+
+	stopKB
+	stopIEAddress
+	stopFileFolder
+	stopWindowTitle
+	stopScreenShoots
+
+	setPaths

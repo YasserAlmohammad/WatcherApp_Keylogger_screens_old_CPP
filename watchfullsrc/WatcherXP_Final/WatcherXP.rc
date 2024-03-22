@@ -1,0 +1,395 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\r\n"
+    "\r\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\r\n"
+    "LANGUAGE 9, 1\r\r\n"
+    "#pragma code_page(1252)\r\r\n"
+    "#include ""res\\WatcherXP.rc2""  // non-Microsoft Visual C++ edited resources\r\r\n"
+    "#include ""afxres.rc""         // Standard components\r\r\n"
+    "#endif\r\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\WatcherXP.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_WATCHERXP_DIALOG DIALOGEX 100, 100, 343, 203
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_EXPLORER1,"{8856F961-340A-11D0-A96B-00C04FD705A2}",
+                    WS_TABSTOP,66,34,270,162
+END
+
+IDD_VIEWER DIALOGEX 0, 0, 420, 271
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CAPTION | WS_SYSMENU
+CAPTION "screen shoots viewer"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "prev",IDC_BUTTON4,163,247,37,17,BS_FLAT
+    PUSHBUTTON      "next",IDC_BUTTON5,124,247,37,17,BS_FLAT
+    PUSHBUTTON      "stop",IDC_BUTTON6,85,247,37,17,BS_FLAT
+    PUSHBUTTON      "pause",IDC_BUTTON7,46,247,37,17,BS_FLAT
+    DEFPUSHBUTTON   "paly",IDC_BUTTON8,7,247,37,17,BS_FLAT
+    COMBOBOX        IDC_COMBO1,309,247,104,16,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "interval between two images",IDC_STATIC_INTERVAL,212,
+                    248,58,16
+END
+
+IDD_PASSWORD DIALOGEX 0, 0, 122, 30
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "password"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT1,7,7,100,15,ES_PASSWORD | ES_AUTOHSCROLL
+END
+
+IDD_OPTIONS DIALOGEX 0, 0, 204, 252
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "options"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,37,231,50,14,BS_CENTER | BS_BOTTOM
+    PUSHBUTTON      "Cancel",IDCANCEL,101,231,50,14,BS_CENTER | BS_BOTTOM
+    CONTROL         "start at windows start up",IDC_CHECK1,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,22,125,10
+    LTEXT           "eneter a password",IDC_STATIC_ENTER,8,71,74,9
+    CONTROL         "password protection ",IDC_CHECK3,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,56,108,10
+    EDITTEXT        IDC_EDIT1,87,73,102,13,ES_PASSWORD | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,87,88,102,13,ES_PASSWORD | ES_AUTOHSCROLL
+    LTEXT           "confirm password",IDC_STATIC_CONFIRM,8,89,74,9
+    CONTROL         "Key strokes",IDC_CHECK6,"Button",BS_AUTOCHECKBOX | 
+                    BS_LEFT | WS_TABSTOP,8,136,81,10
+    CONTROL         "Window Titles",IDC_CHECK7,"Button",BS_AUTOCHECKBOX | 
+                    BS_LEFT | WS_TABSTOP,8,171,117,10
+    CONTROL         "File/Folder operations",IDC_CHECK8,"Button",
+                    BS_AUTOCHECKBOX | BS_LEFT | WS_TABSTOP,8,190,116,10
+    CONTROL         "Screen Shots",IDC_CHECK9,"Button",BS_AUTOCHECKBOX | 
+                    BS_LEFT | WS_TABSTOP,8,210,88,10
+    CONTROL         "I.E Web Address",IDC_CHECK10,"Button",BS_AUTOCHECKBOX | 
+                    BS_LEFT | WS_TABSTOP,7,153,129,10
+    LTEXT           "watch what?",IDC_STATIC_WATCH,8,122,65,9
+    CONTROL         "start in invisble mode",IDC_CHECK11,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,39,122,10
+    EDITTEXT        IDC_EDIT3,107,208,46,14,ES_AUTOHSCROLL
+    LTEXT           "second",IDC_STATIC_SECOND,164,210,34,11
+    CONTROL         "auto start",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,7,125,10
+    PUSHBUTTON      "choose folders",IDC_CHOOSE_FOLDERS,129,187,68,15
+    LTEXT           "hot key setting :           ALT + CTRL+",IDC_STATIC_HOT,
+                    9,107,130,13
+    COMBOBOX        IDC_HOT,155,107,42,12,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_FOLDERS DIALOGEX 0, 0, 264, 210
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "folders to watch"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,38,189,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,111,189,50,14
+    PUSHBUTTON      "choose Folder",IDC_BUTTON1,196,7,61,17
+    EDITTEXT        IDC_EDIT1,7,7,181,16,ES_AUTOHSCROLL
+    PUSHBUTTON      "add to watch list",IDC_BUTTON2,7,30,68,14
+    LISTBOX         IDC_LIST1,7,67,182,109,LBS_SORT | LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_HSCROLL | WS_TABSTOP
+    PUSHBUTTON      "remove selection from list",IDC_BUTTON3,7,49,101,14
+END
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 213, 93
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "About WatcherFunction"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,11,21,20
+    LTEXT           "WatcherFunction Version 1.1\r\n\r\nCopyright (C) 2004 to Yasser Almohammad",
+                    IDC_STATIC_VERSION,40,12,137,31
+    DEFPUSHBUTTON   "OK",IDOK,82,70,50,16,WS_GROUP
+    LTEXT           "this program was made by: Yasser Almohammad, Senior at Damascus IT Faculty",
+                    IDC_STATIC_ABOUT,21,44,176,22
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// RT_MANIFEST
+//
+
+IDR_MANIFEST            RT_MANIFEST             "res\\WatcherXP.manifest"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,1,0,0
+ PRODUCTVERSION 1,1,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "none"
+            VALUE "FileDescription", "watcher program"
+            VALUE "FileVersion", "1.1"
+            VALUE "InternalName", "WatcherXP.exe"
+            VALUE "LegalCopyright", " (c) to Yasser Almohammad .  All rights reserved."
+            VALUE "OriginalFilename", "WatcherXP.exe"
+            VALUE "ProductName", "watcher"
+            VALUE "ProductVersion", "1.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_WATCHERXP_DIALOG DLGINIT
+BEGIN
+    IDC_EXPLORER1, 0x376, 160, 0
+0x0000, 0x0000, 0x004c, 0x0000, 0x29dc, 0x0000, 0x1b2f, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x004c, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 
+0x0000, 0xd0e0, 0x0057, 0x3573, 0x11cf, 0x69ae, 0x0008, 0x2e2b, 0x6212, 
+0x0008, 0x0000, 0x0000, 0x0000, 0x004c, 0x0000, 0x1401, 0x0002, 0x0000, 
+0x0000, 0x00c0, 0x0000, 0x0000, 0x4600, 0x0080, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_MENU_NORMAL         BITMAP                  "res\\bitmap1.bmp"
+IDB_MENU_OVER           BITMAP                  "res\\bitmap2.bmp"
+IDB_SYS_MENU_NORMAL     BITMAP                  "res\\bmp00001.bmp"
+IDB_SYS_MENU_OVER       BITMAP                  "res\\bmp00002.bmp"
+IDB_COM_BTN             BITMAP                  "res\\bmp00003.bmp"
+IDB_COM_OVER_BTN        BITMAP                  "res\\bmp00004.bmp"
+IDB_EXBTN               BITMAP                  "res\\bmp00005.bmp"
+IDB_EXBTN_OVER          BITMAP                  "res\\bmp00006.bmp"
+IDB_HEAD_IDL_BTN        BITMAP                  "res\\bmp00007.bmp"
+IDB_REFRESH_U           BITMAP                  "res\\bmp00009.bmp"
+IDB_STOP_U              BITMAP                  "res\\bmp00008.bmp"
+IDB_PREV_U              BITMAP                  "res\\bmp00010.bmp"
+IDB_NEXT_U              BITMAP                  "res\\bmp00011.bmp"
+IDB_HOME_U              BITMAP                  "res\\bmp00012.bmp"
+IDB_HOME_O              BITMAP                  "res\\bmp00013.bmp"
+IDB_NEXT_O              BITMAP                  "res\\bmp00014.bmp"
+IDB_PREV_O              BITMAP                  "res\\bmp00015.bmp"
+IDB_STOP_O              BITMAP                  "res\\bmp00016.bmp"
+IDB_REFRESH_O           BITMAP                  "res\\bmp00017.bmp"
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Arabic (Syria) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ARS)
+#ifdef _WIN32
+LANGUAGE LANG_ARABIC, SUBLANG_ARABIC_SYRIA
+#pragma code_page(1256)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_BTN_FILE            "„·›"
+    IDS_BTN_VIEW            "⁄—÷"
+    IDS_BTN_REPORT          " ﬁ«—Ì—"
+    IDS_BTN_HELP            "„”«⁄œ…"
+    IDS_FILE_START          "»œ¡"
+    IDS_FILE_STOP           " Êﬁ›"
+    IDS_FILE_HIDE           "«Œ›«¡"
+    IDS_FILE_UILANG         "·›… Ê«ÃÂ… «·„” œŒœ„"
+    IDS_FILE_UIAR           "⁄—»Ì…"
+    IDS_REPORT_CLEAR        "Õ–› «·„⁄ÿÌ«  «·ﬁœÌ„…(’Ê—,„·›« ,œÊ‰ Õ–› «· ﬁ«—Ì—)"
+    IDS_FILE_EXIT           "Œ—ÊÃ"
+    IDS_VIEW_KB             "÷—»«  «·„›« ÌÕ"
+    IDS_VIEW_FF             "«·„·›« -«·„Ã·œ« "
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FILE_UIEN           "√Ã‰»Ì…"
+    IDS_VIEW_WT             "⁄‰«ÊÌ‰ «·‰Ê«›–"
+    IDS_VIEW_IE             "’›Õ«  «·ÊÌ»"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_VIEW_SS             "’Ê— «·‘«‘…"
+    IDS_VIEW_OPTIONS        "ŒÌ«— "
+    IDS_HELP_ABOUT          "⁄‰ «·»—‰«„Ã"
+    IDS_HELP_TOPICS         "„”«⁄œ…"
+    IDS_MSG_KB              "„—«ﬁ»… ·ÊÕ… «·„›« ÌÕ ·„  ‰ÃÕ"
+    IDS_MSG_IE              "„—«ﬁ»… ⁄‰«ÊÌ‰ «·≈‰ —‰Ì  ·„  ‰ÃÕ"
+    IDS_MSG_WT              "„—«ﬁ»… √”„«¡ «·‰Ê«›– ·„  ‰ÃÕ"
+    IDS_MSG_FF              "„—«ﬁ»… «·„Ã·œ«  Ê «·„·›«  ·„  ‰ÃÕ"
+    IDS_MSG_REG             "„ Ì‰ÃÕ ≈÷«›… «·»—‰«„Ã ≈·Ï »œ¡ «· ‘€Ì·,  ⁄–— «·Ê’Ê· ≈·Ï «·—ÌÃ” —Ì"
+    IDS_VIEWER_NOIMAGE      "·¬ ÌÊÃœ √Ì ’Ê—… ··⁄—÷"
+    IDS_VIEWER_WT           "‰«›–… ⁄—÷ ·ﬁÿ«  «·‘«‘…"
+    IDS_VIEWER_PAUSE        " Êﬁ› „ƒﬁ "
+    IDS_VIEWER_STOP         " Êﬁ› «·⁄—÷"
+    IDS_VIEWER_NEXT         "«· «·Ì"
+    IDS_VIEWER_PREV         "«·”«»ﬁ"
+    IDS_VIEWER_INTERVAL     "«·›«—ﬁ «·“„‰Ì »Ì‰ ’Ê— Ì‰"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_VIEWER_MAXSPEED     "√⁄·Ï ”—⁄… ··⁄—÷"
+    IDS_VIEWER_100MILLIS    "100 „Ì·Ì À«‰Ì…"
+    IDS_VIEWER_500MILLIS    "‰’› À«‰Ì…"
+    IDS_OPTIONS_AUTOSTART   "»œ¡ «·„—«ﬁ»… ⁄‰œ  ‘€Ì· «·»—‰«„Ã"
+    IDS_OPTIONS_STARTUP     "«·»œ¡ ⁄‰œ  ‘€Ì· «·‰Ÿ«„"
+    IDS_OPTIONS_AUTOHIDE    "«·»œ¡ »‘ﬂ· „Œ›Ì"
+    IDS_OPTIONS_PASS        "Õ„«Ì… »ﬂ·„… „—Ê—"
+    IDS_OPTIONS_ENTERPASS   "√œŒ· ﬂ·„… «·„—Ê—"
+    IDS_OPTIONS_CONFIRM     " √ﬂÌœ «·ﬂ·„…"
+    IDS_OPTIONS_WHAT        "„«–«  —Ìœ √‰  —«ﬁ»ø"
+    IDS_OPTIONS_KB          "÷—»«  ·ÊÕ… «·„›« ÌÕ"
+    IDS_OPTIONS_IE          "⁄‰«ÊÌ‰ «·≈‰ —‰Ì  «·„“«—…"
+    IDS_OPTIONS_WT          "√”„«¡ «·‰Ê«›– «· Ì ⁄„· ⁄·ÌÂ« «·„” Œœ„"
+    IDS_OPTIONS_FF          " €Ì—«  «·„Ã·œ«  Ê «·„·›« "
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_OPTIONS_HOTKEY      "«⁄œ«  «·hotkey :      ALT-CTRL-SHIFT"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_OPTIONS_SS          "’Ê— ··‘«‘…"
+    IDS_OPTIONS_OK          "„Ê«›ﬁ"
+    IDS_OPTIONS_CHOOSEF     "«Œ — «·„Ã·œ« "
+    IDS_OPTIONS_CANCEL      "≈·€«¡"
+    IDS_OPTIONS_SECOND      "À«‰Ì…"
+    IDS_OPTIONS_REPASS      "√œŒ· ﬂ·„… «·„—Ê— »‘ﬂ· ’ÕÌÕ"
+    IDS_FOLDERLIST_WT       "«Œ — «·„Ã·œ«  «· Ì  —Ìœ „—«ﬁ» Â«"
+    IDS_FOLDERLIST_CHOOSE   "«Œ — „Ã·œ"
+    IDS_FOLDERLIST_ADD      "√÷› ≈·Ï «·ﬁ«∆„…"
+    IDS_FOLDERLIST_DEL      "«Õ–› „‰ «·ﬁ«∆„…"
+    IDS_ABOUT_VER           "»—‰«„Ã «·„—«ﬁ», «·≈’œ«— 1.1 · «·ÕﬁÊﬁ „Õ›ÊŸ… · Ì«”— «·„Õ„œ"
+    IDS_ABOUT_ME            "Õ–› «·„⁄ÿÌ«  «·ﬁœÌ„…:’Ê—,„·›« ,œÊ‰ Õ–› «· ﬁ«—Ì—"
+END
+
+#endif    // Arabic (Syria) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\WatcherXP.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
